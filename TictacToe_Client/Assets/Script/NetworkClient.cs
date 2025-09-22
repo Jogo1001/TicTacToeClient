@@ -3,6 +3,7 @@ using UnityEngine.Assertions;
 using Unity.Collections;
 using Unity.Networking.Transport;
 using Unity.Networking.Transport.Relay;
+using UnityEngine.InputSystem;
 using System.Text;
 
 public class NetworkClient : MonoBehaviour
@@ -12,7 +13,7 @@ public class NetworkClient : MonoBehaviour
     NetworkPipeline reliableAndInOrderPipeline;
     NetworkPipeline nonReliableNotInOrderedPipeline;
     const ushort NetworkPort = 9001;
-    const string IPAddress = "192.168.2.20";
+    const string IPAddress = "192.168.2.19";
 
     void Start()
     {
